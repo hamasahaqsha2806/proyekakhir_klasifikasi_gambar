@@ -1,10 +1,10 @@
-# Image Classification - Animals10 Dataset
+# Image Classification - Vehicle Image Classification Dataset
 
 ## Deskripsi Project
 
-Project ini merupakan implementasi Convolutional Neural Network (CNN) untuk melakukan klasifikasi gambar hewan menggunakan dataset Animals10.
+Project ini merupakan implementasi Convolutional Neural Network (CNN) untuk melakukan klasifikasi gambar hewan menggunakan dataset Vehicle Image Classification.
 
-Model dikembangkan menggunakan TensorFlow dan Keras dengan arsitektur Sequential API yang terdiri dari beberapa layer Conv2D, MaxPooling2D, Flatten, Dense, dan Dropout.
+Model dikembangkan menggunakan TensorFlow dan Keras dengan arsitektur Sequential API yang terdiri dari beberapa layer Conv2D, MaxPooling2D, Flatten, Dense, Dropout, dan MobileNetV2.
 
 Project ini dibuat sebagai submission pada kelas Belajar Fundamental Deep Learning.
 
@@ -14,24 +14,21 @@ Project ini dibuat sebagai submission pada kelas Belajar Fundamental Deep Learni
 
 Dataset yang digunakan:
 
-Animals10 Dataset by alessiocorrado99
+Vehicle Image Classification Dataset by mohamedmaher5
 
 Sumber dataset:
-https://www.kaggle.com/datasets/alessiocorrado99/animals10
+https://www.kaggle.com/datasets/mohamedmaher5/vehicle-classification/data
 
-Dataset terdiri dari 10 kelas hewan:
-- Butterfly
-- Cat
-- Chicken
-- Cow
-- Dog
-- Elephant
-- Horse
-- Sheep
-- Spider
-- Squirrel
+Dataset terdiri dari 7 kelas:
+- Auto Rickshaw
+- Bike
+- Car
+- Motorcycle
+- Plane
+- Ship
+- Train
 
-Jumlah dataset lebih dari 13000 gambar.
+Jumlah dataset lebih dari 5000 gambar.
 
 ---
 
@@ -54,6 +51,8 @@ Model CNN dibuat menggunakan:
 - Dense
 - Dropout
 - MobileNetV2
+- GlobalAveragePooling2D
+- BatchNormalization
 
 Optimizer:
 - Adam
@@ -69,11 +68,9 @@ Metrics:
 ## Hasil Training
 
 Hasil training model:
-- Training Accuracy : 94.78%
-- Validation Accuracy : 80.92%
-- Testing Accuracy : 82.44%
-
-> Ganti nilai XX sesuai hasil training Anda.
+- Training Accuracy : ~85%
+- Validation Accuracy : 86.5%
+- Testing Accuracy : 86.58%
 
 ---
 
